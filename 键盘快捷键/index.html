@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>accelerator</title>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    <p>Hit Alt+Shift+I on Windows, or Opt+Cmd+I on mac to see a message printed to the console.</p>
+    <p>Hit Alt+Ctrl+I on Windows or Opt+Cmd+I on Mac to see a message printed to the console.(globalShortcut)</p>
+    <p>Hit any key with this window focused to see it captured here.</p>
+    <div><span>Last Key Pressed: </span><span id="last-keypress"></span></div>
+    <script src="./renderer.js"></script>
+</body>
+
+</html>
